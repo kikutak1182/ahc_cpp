@@ -10,7 +10,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential gdb clang clang-format cmake ninja-build \
     git curl ca-certificates \
     python3 python3-pip time zip unzip wget jq \
+    pkg-config libssl-dev \
     && rm -rf /var/lib/apt/lists/*
+
 
 # AtCoder Library (C++) を /usr/local/include/atcoder に配置
 RUN git clone --depth 1 -b ${ACL_TAG} https://github.com/atcoder/ac-library.git /tmp/acl \
