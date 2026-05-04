@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build main.cpp",
+      "type": "process",
+      "command": "/opt/homebrew/bin/g++-15",
+      "args": [
+        "-std=gnu++20",
+        "-O2",
+        "-o",
+        "${workspaceFolder}/work/a.out",
+        "${workspaceFolder}/work/main.cpp"
+      ],
+      "options": {
+        "env": {
+          "CPLUS_INCLUDE_PATH": "/Users/kikutakyouhei/ac-library"
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "Run main.cpp",
+      "type": "shell",
+      "command": "${workspaceFolder}/work/a.out",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "dependsOn": "Build main.cpp",
+      "problemMatcher": []
+    }
+  ]
+}

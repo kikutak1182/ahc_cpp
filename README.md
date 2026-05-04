@@ -1,7 +1,6 @@
 # ahc_cpp
-（追記）うまくいってないかも
 
-AtCoder Heuristic Contest (AHC) 向けの C++ + AtCoder Library + pahcer 開発環境を Docker で再現します。  
+AtCoder Heuristic Contest (AHC) 向けの C++ + AtCoder Library + pahcer 開発環境を Docker で再現します。 
 Pythonも使えます。
 VS Code Dev Containers / Docker Compose でそのまま使えます。
 
@@ -15,6 +14,8 @@ workspace       (プロジェクトルート)
 ```
 
 あとでoptunaとかも入れたいですね
+eijirouさんのビームサーチライブラリを追加しました
+https://eijirou-kyopro.hatenablog.com/entry/2024/02/01/115639
 
 ---
 
@@ -53,5 +54,3 @@ pahcer init -p ahc000 -o max -l cpp [-i]
 ```
 詳細はpahcerのREADMEを参照してください。
 (https://github.com/terry-u16/pahcer/blob/main/README.md)
-
-

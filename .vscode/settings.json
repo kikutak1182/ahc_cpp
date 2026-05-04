@@ -1,0 +1,8 @@
+{
+  "C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++-15",
+  "C_Cpp.default.cppStandard": "gnu++20",
+  "C_Cpp.default.intelliSenseMode": "macos-gcc-arm64",
+  "clangd.arguments": [
+    "--query-driver=/opt/homebrew/bin/g++-15"
+  ]
+}

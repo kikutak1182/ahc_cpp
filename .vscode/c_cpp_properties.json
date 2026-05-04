@@ -1,0 +1,16 @@
+{
+  "configurations": [
+    {
+      "name": "macOS-g++-15",
+      "compilerPath": "/opt/homebrew/bin/g++-15",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/Users/kikutakyouhei/ac-library"
+      ],
+      "cStandard": "c17",
+      "cppStandard": "gnu++20",
+      "intelliSenseMode": "macos-gcc-arm64"
+    }
+  ],
+  "version": 4
+}
