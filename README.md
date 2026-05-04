@@ -14,6 +14,7 @@ workspace       (プロジェクトルート)
 ```
 
 あとでoptunaとかも入れたいですね
+
 eijirouさんのビームサーチライブラリを追加しました
 https://eijirou-kyopro.hatenablog.com/entry/2024/02/01/115639
 
