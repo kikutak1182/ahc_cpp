@@ -21,10 +21,13 @@ RUN git clone --depth 1 -b ${ACL_TAG} https://github.com/atcoder/ac-library.git 
 
 # Rust を rustup で導入（root のホームに入る）
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
-ENV PATH="/root/.cargo/bin:${PATH}"
+ENV PATH="/usr/local/bin:/root/.cargo/bin:${PATH}"
 
-# pahcer（提出用変換ツール想定）をインストール
+# pahcer（ローカルテストの並列実行ツール）をインストール
 RUN cargo install pahcer --locked
+
+# C++の非インタラクティブ問題では、init後にvisの事前ビルド設定を追加
+COPY --chmod=755 .devcontainer/pahcer-wrapper.py /usr/local/bin/pahcer
 
 # （必要なら）ojツール等も
 # RUN pip3 install -U pip && pip3 install online-judge-tools==11.7.0
